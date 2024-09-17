@@ -1,20 +1,15 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Login from '../page/login'
-import UserManage from '../page/userManage'
-import AdminManage from '../page/adminManage'
+import Location from '../page/location'
+import FileUpload from '../page/FileUpload'
 
 const router = createBrowserRouter([
     {
-        path: "/login",
-        element: <Login />
-    },
-    {
-        path: "/userManage",
-        element: <UserManage />
-    },
-    {
         path: "/",
-        element: <AdminManage />
+        element: <Location />
+    },
+    {
+        path: "/file",
+        element: <FileUpload />
     },
 ])
 export default function MainRoute() {
